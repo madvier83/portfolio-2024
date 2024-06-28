@@ -2,32 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242424;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #363636;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #212b38;
+  border-radius: 8px;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-black text-white overflow-x-hidden select-none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+* {
+  @apply font-mono leading-6 tracking-wide;
 }
+.card {
+  @apply bg-gray-600 hover:bg-teal-500 bg-opacity-10 hover:bg-opacity-10 backdrop-blur-sm rounded-3xl border transition-all duration-500 border-gray-700 hover:border-teal-600  text-white overflow-clip;
+}
+
+.card-img {
+  @apply rounded-xl max-h-52 border group-hover:border-teal-500 border-gray-700 group-hover:transition-all group-hover:duration-500 overflow-clip;
+}
+
+/* .timeline-table td {
+  @apply border-b border-dashed border-opacity-15;
+} */
