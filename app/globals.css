@@ -40,7 +40,7 @@ body {
 }
 
 .card-link {
-  @apply flex justify-between px-4 py-3 bg-teal-200 bg-opacity-10 hover:bg-opacity-25 transition-all duration-500 rounded-xl mx-4 cursor-pointer;
+  @apply flex justify-between flex-wrap px-4 py-3 bg-teal-200 bg-opacity-10 hover:bg-opacity-25 transition-all duration-500 rounded-xl mx-4 cursor-pointer;
 }
 
 /* .timeline-table td {
