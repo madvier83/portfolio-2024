@@ -10,11 +10,47 @@ import RecyThingCard from "../components/cards/RecyThingCard";
 import GithubCard from "../components/cards/GithubCard";
 
 import Timeline from "../about/Timeline";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { faSpaceAwesome } from "@fortawesome/free-brands-svg-icons";
 
 export default function Hero() {
+  const audioRef = useRef(null);
+
+  // useEffect(() => {
+  //   const handlePlay = () => {
+  //     if (audioRef.current) {
+  //       audioRef.current.volume = 0.01;
+  //       audioRef.current.play().catch((error) => {
+  //         console.log("Autoplay prevented:", error);
+  //       });
+  //     }
+  //   };
+
+  //   const handleEnded = () => {
+  //     if (audioRef.current) {
+  //       audioRef.current.currentTime = 0;
+  //       audioRef.current.play().catch((error) => {
+  //         console.log("Autoplay prevented:", error);
+  //       });
+  //     }
+  //   };
+
+  //   document.addEventListener("click", handlePlay);
+
+  //   if (audioRef.current) {
+  //     audioRef.current.addEventListener("ended", handleEnded);
+  //   }
+
+  //   // Cleanup event listeners on component unmount
+  //   return () => {
+  //     document.removeEventListener("click", handlePlay);
+  //     if (audioRef.current) {
+  //       audioRef.current.removeEventListener("ended", handleEnded);
+  //     }
+  //   };
+  // }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -38,7 +74,6 @@ export default function Hero() {
           />
         </div>
       </div>
-
       <h1 className="opacity-50 text-xl mt-[25vh] text-center font-mono">
         Technical Proficiencies
       </h1>
@@ -80,7 +115,6 @@ export default function Hero() {
           alt="madvier83"
         />
       </div>
-
       <h1 className="opacity-50 text-xl mt-[30vh] text-center font-mono">
         Selected Projects
       </h1>
@@ -92,18 +126,15 @@ export default function Hero() {
         <MalViewerCard></MalViewerCard>
         <GithubCard></GithubCard>
       </div>
-
       <h1 className="opacity-50 text-xl mt-[30vh] text-center font-mono">
         Professional Career
       </h1>
       <div className="flex items-center mt-16 lg:mx-4">
         <Timeline></Timeline>
       </div>
-
       <h1 className="opacity-50 text-xl mt-[30vh] text-center font-mono">
         Contact Information
       </h1>
-
       <div className="grid md:grid-cols-2 gap-4 mt-16 flex-col">
         <a
           target="_blank"
@@ -138,7 +169,6 @@ export default function Hero() {
           <p className="text-sm opacity-50">/madvier83</p>
         </a>
       </div>
-
       <a
         href="https://drive.google.com/file/d/19UiCksWII06ICktvRgPQQLtlb-xlcBry/view?usp=sharing"
         target="_blank"
@@ -150,7 +180,6 @@ export default function Hero() {
           </button>
         </div>
       </a>
-
       <div className="py-[47vh] flex items-center justify-center text-6xl">
         <div
           className="cursor-pointer pb-4 transition-all duration-200 hover:animate-pulse hover:text-cyan-300 active:text-orange-500"
@@ -159,6 +188,15 @@ export default function Hero() {
           <FontAwesomeIcon icon={faSpaceAwesome} />
         </div>
       </div>
+      {/* <audio
+        controls
+        autoPlay={true}
+        loop={true}
+        ref={audioRef}
+        className="hidden"
+      >
+        <source src="/bgm2.mp3" type="audio/mpeg" />
+      </audio> */}
     </div>
   );
 }

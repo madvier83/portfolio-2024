@@ -19,6 +19,17 @@ export default function SejatiLifeCard() {
           that highlight my skills and passion for coding.
         </p>
       </div>
+
+      <div className="mb-4 flex flex-col gap-2">
+        <a
+          href="https://github.com/madvier83"
+          target="_blank"
+          className="card-link"
+        >
+          <p>GitHub</p>
+          <p className="text-teal-400">https://github.com/madvier83</p>
+        </a>
+      </div>
     </div>
   );
 }

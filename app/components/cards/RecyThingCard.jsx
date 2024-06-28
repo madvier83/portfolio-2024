@@ -3,9 +3,9 @@ import React from "react";
 
 export default function RecyThingCard() {
   return (
-    <div className="card cursor-pointer flex flex-col gap-4 p-4 group">
+    <div className="card flex flex-col gap-4 p-4 group">
       <div className="card-img transition-all duration-500">
-        <Image src="/recything2.png" width={1000} height={700} />
+        <Image src="/recything2.png" width={1000} height={700} alt="" />
       </div>
       <div className="h-full py-8 px-4">
         <h1 className="text-2xl font-bold mb-4">RecyThing</h1>
@@ -18,10 +18,25 @@ export default function RecyThingCard() {
           <img src="https://svgl-badge.vercel.app/api/Framework/Flutter?theme=dark" />
           <img src="https://svgl-badge.vercel.app/api/Language/Dart?theme=dark" />
         </div>
+      </div>
 
-        {/* <button className="bg-teal-400 text-black px-4 py-2 rounded-md w-full mt-4 font-semibold">
-          Read More
-        </button> */}
+      <div className="mb-4 flex flex-col gap-2">
+        <a
+          href="https://recything.my.id/"
+          target="_blank"
+          className="card-link"
+        >
+          <p>Website</p>
+          <p className="text-teal-400">https://recything.my.id/</p>
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.recy.recythinge"
+          target="_blank"
+          className="card-link"
+        >
+          <p>PlayStore</p>
+          <p className="text-teal-400">RecyThing</p>
+        </a>
       </div>
     </div>
   );

@@ -39,6 +39,10 @@ body {
   @apply rounded-xl max-h-52 border group-hover:border-teal-500 border-gray-700 group-hover:transition-all group-hover:duration-500 overflow-clip;
 }
 
+.card-link {
+  @apply flex justify-between px-4 py-3 bg-teal-200 bg-opacity-10 hover:bg-opacity-25 transition-all duration-500 rounded-xl mx-4 cursor-pointer;
+}
+
 /* .timeline-table td {
   @apply border-b border-dashed border-opacity-15;
 } */

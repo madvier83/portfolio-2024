@@ -5,7 +5,7 @@ export default function MalViewerCard() {
   return (
     <div className="card cursor-pointer flex flex-col gap-4 p-4 group">
       <div className="card-img transition-all duration-500">
-        <Image src="/mal.png" width={1000} height={700} />
+        <Image src="/mal.png" width={1000} height={700} alt="" />
       </div>
       <div className="h-full py-8 px-4">
         <h1 className="text-2xl font-bold mb-4">MAL Viewer</h1>
@@ -18,10 +18,16 @@ export default function MalViewerCard() {
           <img src="https://svgl-badge.vercel.app/api/Framework/Flutter?theme=dark" />
           <img src="https://svgl-badge.vercel.app/api/Language/Dart?theme=dark" />
         </div>
-
-        {/* <button className="bg-teal-400 text-black px-4 py-2 rounded-md w-full mt-4 font-semibold">
-          Read More
-        </button> */}
+      </div>
+      <div className="mb-4 flex flex-col gap-2">
+        <a
+          href="https://appdistribution.firebase.google.com/testerapps/1:315255166207:android:4ca957ca113907379fe8ca/releases/2v37ue9unnrl8"
+          target="_blank"
+          className="card-link"
+        >
+          <p>FirebaseDist</p>
+          <p className="text-teal-400">MAL Viewer</p>
+        </a>
       </div>
     </div>
   );
