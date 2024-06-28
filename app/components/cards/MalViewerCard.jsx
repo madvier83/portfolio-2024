@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MalViewerCard() {
   return (
-    <div className="card cursor-pointer flex flex-col gap-4 p-4 group">
+    <div className="card flex flex-col gap-4 p-4 group">
       <div className="card-img transition-all duration-500">
         <Image src="/mal.png" width={1000} height={700} alt="" />
       </div>

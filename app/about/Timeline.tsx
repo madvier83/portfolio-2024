@@ -20,10 +20,10 @@ function Timeline() {
         <tr>
           <td className="font-bold text-teal-500">&bull;</td>
           <td
-            className="bg-teal-400 bg-opacity-10 backdrop-blur-md rounded-2xl border-teal-600 align-top p-4 md:p-8"
+            className="bg-teal-400 transition-all duration-500 hover:bg-opacity-15 bg-opacity-10 backdrop-blur-md rounded-2xl border-teal-600 align-top p-4 md:p-8"
             rowSpan={35}
           >
-            <div className="w-full flex flex-col paragraph">
+            <div className="w-full flex flex-col paragraph group">
               <p className=" mb-4 text-teal-600 font-bold">Oct 2021 - 2025</p>
               <p className="font-semibold mb-4">Education</p>
               <p className="opacity-50">
@@ -39,7 +39,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-violet-700 backdrop-blur-md bg-opacity-20 rounded-2xl border-violet-600 align-top p-4 md:p-8"
+            className="bg-violet-700 transition-all duration-500 hover:bg-opacity-30 backdrop-blur-md bg-opacity-20 rounded-2xl border-violet-600 align-top p-4 md:p-8"
             rowSpan={8}
           >
             <div className="w-full flex flex-col paragraph relative">
@@ -78,7 +78,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-violet-700 bg-opacity-20 rounded-2xl border-violet-600 backdrop-blur-lg align-top p-4 md:p-8"
+            className="bg-violet-700 transition-all duration-500 hover:bg-opacity-30 bg-opacity-20 rounded-2xl border-violet-600 backdrop-blur-lg align-top p-4 md:p-8"
             rowSpan={15}
           >
             <div className="w-full flex flex-col paragraph relative">
@@ -174,7 +174,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-teal-400 bg-opacity-10 backdrop-blur-md rounded-2xl border-teal-600 align-top p-4 md:p-8"
+            className="bg-teal-400 transition-all duration-500 hover:bg-opacity-15 bg-opacity-10 backdrop-blur-md rounded-2xl border-teal-600 align-top p-4 md:p-8"
             rowSpan={36}
           >
             <div className="w-full flex flex-col paragraph">
@@ -234,7 +234,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-green-700 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-4 md:p-8"
+            className="bg-green-700 transition-all duration-500 hover:bg-opacity-35 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-4 md:p-8"
             rowSpan={9}
           >
             <div className="w-full flex flex-col paragraph relative">
@@ -304,7 +304,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-green-700 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-4 md:p-8"
+            className="bg-green-700 transition-all duration-500 hover:bg-opacity-35 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-4 md:p-8"
             rowSpan={6}
           >
             <div className="w-full flex flex-col paragraph relative">
