@@ -66,14 +66,19 @@ export default function Hero() {
         <img src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
+      </div>
+      <div className="backdrop-blur-sm mt-8 flex items-center justify-center">
+        <img
+          className="hidden lg:block"
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=800"
+          alt="madvier83"
+        />
 
-        <div className="backdrop-blur-sm mt-8">
-          <img
-            className=""
-            src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=800"
-            alt="madvier83"
-          />
-        </div>
+        <img
+          className="block lg:hidden"
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=400"
+          alt="madvier83"
+        />
       </div>
 
       <h1 className="opacity-50 text-xl mt-[30vh] text-center font-mono">
@@ -95,60 +100,65 @@ export default function Hero() {
         <Timeline></Timeline>
       </div>
 
-      <div className="flex justify-center mt-8">
-        <button className="bg-teal-500 max-w-sm min-w-48 p-4 rounded-xl text-black mt-4 font-bold flex gap-4 items-center justify-center">
-          <p>Download CV</p>
-          <FontAwesomeIcon icon={faFileCode} className="text-xl" />
-        </button>
-      </div>
-
       <h1 className="opacity-50 text-xl mt-[30vh] text-center font-mono">
         Contact Information
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-4 mt-16 mb-32 flex-col">
+      <div className="grid md:grid-cols-2 gap-4 mt-16 flex-col">
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=082376932445"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-teal-400 bg-opacity-20 backdrop-blur-sm border-teal-100 hover:text-white text-lg cursor-pointer flex justify-between"
+          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-teal-400 bg-opacity-20 backdrop-blur-sm  hover:border-emerald-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
         >
           <p>Whatsapp</p>
-          <p>0823 7693 2445</p>
+          <p className="text-sm opacity-50">0823 7693 2445</p>
         </a>
         <a
           // target="_blank"
           href="mailto:madvier83@gmail.com"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-sky-400 bg-opacity-20 backdrop-blur-sm border-sky-100 hover:text-white text-lg cursor-pointer flex justify-between"
+          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-sky-400 bg-opacity-20 backdrop-blur-sm hover:border-sky-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
         >
           <p>Email</p>
-          <p>madvier83@gmail.com</p>
+          <p className="text-sm opacity-50">madvier83@gmail.com</p>
         </a>
         <a
           target="_blank"
           href="https://www.linkedin.com/in/muhammad-advie-rifaldy-a9790b251/"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-blue-400 bg-opacity-20 backdrop-blur-sm border-blue-100  hover:text-white text-lg cursor-pointer"
+          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-blue-400 bg-opacity-20 backdrop-blur-sm   hover:border-blue-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
         >
-          LinkedIn
+          <p>LinkedIn</p>
+          <p className="text-sm opacity-50">/advierifaldy</p>
         </a>
         <a
           target="_blank"
           href="https://github.com/madvier83"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-violet-400 bg-opacity-20 backdrop-blur-sm border-violet-100  hover:text-white text-lg cursor-pointer"
+          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-violet-400 bg-opacity-20 backdrop-blur-sm   hover:border-violet-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
         >
-          GitHub
+          <p>GitHub</p>
+          <p className="text-sm opacity-50">/madvier83</p>
         </a>
       </div>
 
-      <div className="py-[30vh] flex items-center justify-center text-6xl">
+      <a
+        href="https://drive.google.com/file/d/19UiCksWII06ICktvRgPQQLtlb-xlcBry/view?usp=sharing"
+        target="_blank"
+      >
+        <div className="flex justify-center mt-4">
+          <button className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-rose-400 bg-opacity-20 backdrop-blur-sm   hover:border-rose-500 border border-gray-800 text-lg cursor-pointer flex items-center justify-between min-w-80 w-full">
+            <p>Download CV</p>
+            <p className="text-sm opacity-50">Updated May 2024</p>
+          </button>
+        </div>
+      </a>
+
+      <div className="py-[47vh] flex items-center justify-center text-6xl">
         <div
-          className="cursor-pointer pb-4 transition-all duration-500 hover:animate-pulse hover:text-cyan-300"
+          className="cursor-pointer pb-4 transition-all duration-200 hover:animate-pulse hover:text-cyan-300 active:text-orange-500"
           onClick={scrollToTop}
         >
           <FontAwesomeIcon icon={faSpaceAwesome} />
         </div>
       </div>
-
-      <div className="py-24"></div>
     </div>
   );
 }

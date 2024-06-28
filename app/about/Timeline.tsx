@@ -3,7 +3,7 @@ function Timeline() {
     <table className="timeline-table w-full">
       <tbody>
         <tr>
-          <td className="text-xs pr-4">2025</td>
+          <td className="text-xs pr-2">2025</td>
         </tr>
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
@@ -20,7 +20,7 @@ function Timeline() {
         <tr>
           <td className="font-bold text-teal-500">&bull;</td>
           <td
-            className="bg-teal-400 bg-opacity-10 backdrop-blur-md rounded-2xl border-teal-600 align-top p-8"
+            className="bg-teal-400 bg-opacity-10 backdrop-blur-md rounded-2xl border-teal-600 align-top p-4 md:p-8"
             rowSpan={35}
           >
             <div className="w-full flex flex-col paragraph">
@@ -39,7 +39,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-violet-700 backdrop-blur-md bg-opacity-20 rounded-2xl border-violet-600 align-top p-8"
+            className="bg-violet-700 backdrop-blur-md bg-opacity-20 rounded-2xl border-violet-600 align-top p-4 md:p-8"
             rowSpan={8}
           >
             <div className="w-full flex flex-col paragraph relative">
@@ -78,7 +78,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-violet-700 bg-opacity-20 rounded-2xl border-violet-600 backdrop-blur-lg align-top p-8"
+            className="bg-violet-700 bg-opacity-20 rounded-2xl border-violet-600 backdrop-blur-lg align-top p-4 md:p-8"
             rowSpan={15}
           >
             <div className="w-full flex flex-col paragraph relative">
@@ -174,7 +174,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-teal-400 bg-opacity-10 backdrop-blur-md rounded-2xl border-teal-600 align-top p-8"
+            className="bg-teal-400 bg-opacity-10 backdrop-blur-md rounded-2xl border-teal-600 align-top p-4 md:p-8"
             rowSpan={36}
           >
             <div className="w-full flex flex-col paragraph">
@@ -234,7 +234,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-green-700 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-8"
+            className="bg-green-700 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-4 md:p-8"
             rowSpan={9}
           >
             <div className="w-full flex flex-col paragraph relative">
@@ -304,7 +304,7 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-green-700 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-8"
+            className="bg-green-700 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-4 md:p-8"
             rowSpan={6}
           >
             <div className="w-full flex flex-col paragraph relative">

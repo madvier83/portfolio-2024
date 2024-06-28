@@ -21,15 +21,21 @@ export default function MainNavbar() {
         </p>
       </Link>
       <div className="flex gap-8 text-2xl">
-        <Link href="/about">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/muhammad-advie-rifaldy-a9790b251/"
+        >
           <FontAwesomeIcon icon={faLinkedin} />
-        </Link>
-        <Link href="/about">
+        </a>
+        <a target="_blank" href="https://github.com/madvier83">
           <FontAwesomeIcon icon={faGithub} />
-        </Link>
-        <Link href="/about">
+        </a>
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=082376932445"
+        >
           <FontAwesomeIcon icon={faWhatsapp} />
-        </Link>
+        </a>
       </div>
     </div>
   );
