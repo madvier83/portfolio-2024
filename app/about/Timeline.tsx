@@ -39,11 +39,11 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-violet-700 transition-all duration-500 hover:bg-opacity-30 backdrop-blur-md bg-opacity-20 rounded-2xl border-violet-600 align-top p-4 md:p-8"
+            className="bg-violet-700 transition-all duration-500 hover:bg-opacity-20 backdrop-blur-md bg-opacity-15 rounded-2xl border-violet-600 align-top p-4 md:p-8"
             rowSpan={8}
           >
             <div className="w-full flex flex-col paragraph relative">
-              {/* <div className="border-t-2 border-violet-600 w-[30rem] border-dashed absolute right-[410px] top-1.5 hidden lg:block -z-50"></div> */}
+              {/* <div className="border-t-2 border-violet-600 w-[30rem] border-dashed absolute right-[414px] animate-pulse opacity-35 top-3 hidden lg:block -z-50"></div> */}
               <p className=" mb-4 text-violet-600 font-bold">Now</p>
               <p className="font-semibold">Freelance</p>
 
@@ -78,11 +78,11 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-violet-700 transition-all duration-500 hover:bg-opacity-30 bg-opacity-20 rounded-2xl border-violet-600 backdrop-blur-lg align-top p-4 md:p-8"
+            className="bg-violet-700 transition-all duration-500 hover:bg-opacity-20 bg-opacity-15 rounded-2xl border-violet-600 backdrop-blur-lg align-top p-4 md:p-8"
             rowSpan={15}
           >
             <div className="w-full flex flex-col paragraph relative">
-              <div className="border-t-2 border-violet-600 w-[30rem] border-dashed absolute right-[410px] top-1.5 hidden lg:block"></div>
+              <div className="border-t-2 border-violet-600 w-[30rem] border-dashed absolute right-[414px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
               <p className=" mb-4 text-violet-600 font-bold">
                 Sep 2022 - Sep 2023
               </p>
@@ -234,12 +234,12 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-green-700 transition-all duration-500 hover:bg-opacity-35 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-4 md:p-8"
+            className="bg-emerald-700 transition-all duration-500 hover:bg-opacity-35 backdrop-blur-md bg-opacity-20 rounded-2xl border-emerald-600 align-top p-4 md:p-8"
             rowSpan={9}
           >
             <div className="w-full flex flex-col paragraph relative">
-              <div className="border-t-2 border-green-600 w-[30rem] border-dashed absolute right-[410px] top-1.5 hidden lg:block"></div>
-              <p className=" mb-4 text-green-600">Oct 2019 - Mar 2020</p>
+              <div className="border-t-2 border-emerald-600 w-[30rem] border-dashed absolute right-[414px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
+              <p className=" mb-4 text-emerald-600">Oct 2019 - Mar 2020</p>
               <p className="font-semibold mb-4">Fullstack Developer Intern</p>
               <p className="opacity-50">CyberLabs Forensics</p>
 
@@ -248,7 +248,7 @@ function Timeline() {
           </td>
         </tr>
         <tr>
-          <td className="text-green-600 font-bold">&bull;</td>
+          <td className="text-emerald-600 font-bold">&bull;</td>
         </tr>
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
@@ -304,12 +304,12 @@ function Timeline() {
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
           <td
-            className="bg-green-700 transition-all duration-500 hover:bg-opacity-35 backdrop-blur-md bg-opacity-30 rounded-2xl border-green-600 align-top p-4 md:p-8"
+            className="bg-emerald-700 transition-all duration-500 hover:bg-opacity-35 backdrop-blur-md bg-opacity-20 rounded-2xl border-emerald-600 align-top p-4 md:p-8"
             rowSpan={6}
           >
             <div className="w-full flex flex-col paragraph relative">
-              <div className="border-t-2 border-green-600 w-[30rem] border-dashed absolute right-[410px] top-1.5 hidden lg:block"></div>
-              <p className=" mb-4 text-green-600">18 Sep 2018</p>
+              <div className="border-t-2 border-emerald-600 w-[30rem] border-dashed absolute right-[414px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
+              <p className=" mb-4 text-emerald-600">18 Sep 2018</p>
               <p className="font-semibold">🌱 First Hello World!</p>
 
               <p className=" mt-4 text-gray-500"></p>
@@ -317,7 +317,7 @@ function Timeline() {
           </td>
         </tr>
         <tr>
-          <td className="text-green-500 font-bold">&bull;</td>
+          <td className="text-emerald-500 font-bold">&bull;</td>
         </tr>
         <tr>
           <td className="font-bold opacity-15">&bull;</td>

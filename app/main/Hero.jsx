@@ -15,7 +15,7 @@ import RecyThingCard from "../components/cards/RecyThingCard";
 import GithubCard from "../components/cards/GithubCard";
 
 import Timeline from "../about/Timeline";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { faSpaceAwesome } from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
@@ -23,6 +23,8 @@ import "aos/dist/aos.css";
 
 export default function Hero() {
   const audioRef = useRef(null);
+
+  const [reachBottom, setReachBottom] = useState(false);
 
   useEffect(() => {
     AOS.init();
@@ -34,6 +36,8 @@ export default function Hero() {
       top: 0,
       behavior: "smooth",
     });
+
+    setReachBottom(true);
   };
 
   return (
@@ -51,12 +55,28 @@ export default function Hero() {
           Fullstack Web Developer From Bandung, Indonesia
         </p>
         <div className="text-4xl flex items-center justify-center">
-          <FontAwesomeIcon
-            className="ml-4 animate-bounce w-4"
-            icon={faCaretDown}
-          />
+          <FontAwesomeIcon className="animate-bounce w-4" icon={faCaretDown} />
         </div>
       </div>
+
+      {/* {reachBottom && (
+        <div
+          className="mt-8 opacity-50"
+          data-aos="fade"
+          data-aos-delay="2000"
+          data-aos-duration="3000"
+        >
+          <h1 className="opacity-90 text-2xl font-bold text-center font-mono flex flex-col items-center animate-spin">
+            <div className="w-24 bg-teal-700 rounded-full bg-opacity-15 animate-pulse hover:brightness-150 cursor-pointer hover:blur-sm transition-all duration-1000">
+              <img
+                src="/blackhole.svg"
+                alt=""
+                className="text-white scale-x-[-1]"
+              />
+            </div>
+          </h1>
+        </div>
+      )} */}
 
       <h1 className="opacity-90 text-2xl font-bold mt-[25vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
@@ -152,7 +172,7 @@ export default function Hero() {
         </a>
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/muhammad-advie-rifaldy-a9790b251/"
+          href="https://www.linkedin.com/in/advierifaldy/"
           className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-blue-400 bg-opacity-20 backdrop-blur-sm   hover:border-blue-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
         >
           <p>LinkedIn</p>

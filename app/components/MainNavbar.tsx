@@ -28,10 +28,7 @@ export default function MainNavbar() {
         </p>
       </Link>
       <div className="flex gap-8 text-2xl">
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/muhammad-advie-rifaldy-a9790b251/"
-        >
+        <a target="_blank" href="https://www.linkedin.com/in/advierifaldy/">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
         <a target="_blank" href="https://github.com/madvier83">
