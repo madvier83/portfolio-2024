@@ -8,7 +8,7 @@ export default function IndopalmCard() {
         <Image src="/indopalm.png" width={1000} height={700} alt="" />
       </div>
       <div className="h-full py-8 px-4">
-        <h1 className="text-2xl font-bold mb-4">Indopalm</h1>
+        <h1 className="text-2xl font-bold mb-4">Indopalm Enterprise</h1>
         <p className="opacity-50">
           Company Profile of the Leading Manufacturer and Wholesale Supplier for
           Indonesian Coconut Charcoal Briquettes.

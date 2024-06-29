@@ -1,4 +1,9 @@
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCaretDown,
+  faRocket,
+  faSatellite,
+  faShuttleSpace,
+} from "@fortawesome/free-solid-svg-icons";
 import { faFileCode } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
@@ -13,43 +18,16 @@ import Timeline from "../about/Timeline";
 import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { faSpaceAwesome } from "@fortawesome/free-brands-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
   const audioRef = useRef(null);
 
-  // useEffect(() => {
-  //   const handlePlay = () => {
-  //     if (audioRef.current) {
-  //       audioRef.current.volume = 0.01;
-  //       audioRef.current.play().catch((error) => {
-  //         console.log("Autoplay prevented:", error);
-  //       });
-  //     }
-  //   };
-
-  //   const handleEnded = () => {
-  //     if (audioRef.current) {
-  //       audioRef.current.currentTime = 0;
-  //       audioRef.current.play().catch((error) => {
-  //         console.log("Autoplay prevented:", error);
-  //       });
-  //     }
-  //   };
-
-  //   document.addEventListener("click", handlePlay);
-
-  //   if (audioRef.current) {
-  //     audioRef.current.addEventListener("ended", handleEnded);
-  //   }
-
-  //   // Cleanup event listeners on component unmount
-  //   return () => {
-  //     document.removeEventListener("click", handlePlay);
-  //     if (audioRef.current) {
-  //       audioRef.current.removeEventListener("ended", handleEnded);
-  //     }
-  //   };
-  // }, []);
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -60,11 +38,16 @@ export default function Hero() {
 
   return (
     <div className="flex flex-col min-h-screen px-8 overflow-y-hidden">
-      <div className="z-20 mt-[20vh] text-center">
+      <div
+        className="z-20 mt-[25vh] text-center"
+        data-aos="fade"
+        data-aos-duration="3000"
+        data-aos-delay="1000"
+      >
         <h1 className="opacity-50 text-xl font-mono">
           Welcome to My Portfolio!
         </h1>
-        <p className="text-3xl md:text-6xl font-bold my-8 leading-tight">
+        <p className="text-3xl md:text-7xl font-bold my-8">
           Fullstack Web Developer From Bandung, Indonesia
         </p>
         <div className="text-4xl flex items-center justify-center">
@@ -74,8 +57,12 @@ export default function Hero() {
           />
         </div>
       </div>
-      <h1 className="opacity-50 text-xl mt-[25vh] text-center font-mono">
-        Technical Proficiencies
+
+      <h1 className="opacity-90 text-2xl font-bold mt-[25vh] text-center font-mono flex flex-col items-center">
+        <div className="w-24 mb-4">
+          <img src="/code1.svg" alt="" className="text-white" />
+        </div>
+        Tech Skills
       </h1>
       <div className="flex flex-wrap items-center justify-center gap-4 mt-16">
         <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
@@ -108,15 +95,18 @@ export default function Hero() {
           src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=800"
           alt="madvier83"
         />
-
         <img
           className="block lg:hidden"
           src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=400"
           alt="madvier83"
         />
       </div>
-      <h1 className="opacity-50 text-xl mt-[30vh] text-center font-mono">
-        Selected Projects
+
+      <h1 className="opacity-90 text-2xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+        <div className="w-24 mb-4">
+          <img src="/planet2.svg" alt="" className="text-white" />
+        </div>
+        Highlighted Projects
       </h1>
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
         <ApdocCard></ApdocCard>
@@ -126,15 +116,23 @@ export default function Hero() {
         <MalViewerCard></MalViewerCard>
         <GithubCard></GithubCard>
       </div>
-      <h1 className="opacity-50 text-xl mt-[30vh] text-center font-mono">
-        Professional Career
+      <h1 className="opacity-90 text-2xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+        <div className="w-24 mb-4">
+          <img src="/telescope.svg" alt="" className="text-white" />
+        </div>
+        Career Journey
       </h1>
       <div className="flex items-center mt-16 lg:mx-4">
         <Timeline></Timeline>
       </div>
-      <h1 className="opacity-50 text-xl mt-[30vh] text-center font-mono">
-        Contact Information
+
+      <h1 className="opacity-90 text-2xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+        <div className="w-24 mb-4">
+          <img src="/chat.svg" alt="" className="text-white" />
+        </div>
+        Stay Connected
       </h1>
+
       <div className="grid md:grid-cols-2 gap-4 mt-16 flex-col">
         <a
           target="_blank"
@@ -180,23 +178,16 @@ export default function Hero() {
           </button>
         </div>
       </a>
-      <div className="py-[47vh] flex items-center justify-center text-6xl">
+      <div className="py-[45vh] flex items-center justify-center text-5xl">
         <div
-          className="cursor-pointer pb-4 transition-all duration-200 hover:animate-pulse hover:text-cyan-300 active:text-orange-500"
+          className="cursor-pointer transition-all duration-200 hover:animate-pulse hover:brightness-125 hover:text-teal-300 active:text-teal-500"
           onClick={scrollToTop}
         >
-          <FontAwesomeIcon icon={faSpaceAwesome} />
+          <div className="w-24" data-aos="fade-up" data-aos-duration="2000">
+            <img src="/rocket2.svg" alt="" className="-rotate-45" />
+          </div>
         </div>
       </div>
-      {/* <audio
-        controls
-        autoPlay={true}
-        loop={true}
-        ref={audioRef}
-        className="hidden"
-      >
-        <source src="/bgm2.mp3" type="audio/mpeg" />
-      </audio> */}
     </div>
   );
 }

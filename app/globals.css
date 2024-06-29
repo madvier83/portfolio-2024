@@ -29,7 +29,7 @@ body {
 }
 
 * {
-  @apply font-mono leading-6 tracking-wide;
+  @apply font-mono leading-7 tracking-wide;
 }
 .card {
   @apply bg-gray-600 hover:bg-teal-500 bg-opacity-10 hover:bg-opacity-10 backdrop-blur-sm rounded-3xl border transition-all duration-500 border-gray-700 hover:border-teal-600  text-white overflow-clip;

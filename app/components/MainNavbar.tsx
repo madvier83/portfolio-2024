@@ -6,16 +6,23 @@ import {
   faLinkedin,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
 
 export default function MainNavbar() {
   return (
-    <div className="flex justify-between items-center h-0 w-full py-16 px-4 z-50">
+    <div
+      className="flex justify-between items-center h-0 w-full py-16 px-4 z-50"
+      data-aos="fade"
+      data-aos-duration="2000"
+    >
       <Link
         href="/"
         className="text-white font-bold flex items-center justify-center"
       >
-        <FontAwesomeIcon className="w-4 mr-4" icon={faCircle} />
+        <div className="text-2xl mr-4">
+          <FontAwesomeIcon icon={faUserAstronaut} />
+        </div>
+        {/* <FontAwesomeIcon className="w-4 mr-4" icon={faCircle} /> */}
         <p className="text-xl tracking-wider">
           Ad<span className="">vi</span>e Rifaldy
         </p>
