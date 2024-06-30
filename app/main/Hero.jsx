@@ -59,25 +59,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* {reachBottom && (
-        <div
-          className="mt-8 opacity-50"
-          data-aos="fade"
-          data-aos-delay="2000"
-          data-aos-duration="3000"
-        >
-          <h1 className="opacity-90 text-2xl font-bold text-center font-mono flex flex-col items-center animate-spin">
-            <div className="w-24 bg-teal-700 rounded-full bg-opacity-15 animate-pulse hover:brightness-150 cursor-pointer hover:blur-sm transition-all duration-1000">
-              <img
-                src="/blackhole.svg"
-                alt=""
-                className="text-white scale-x-[-1]"
-              />
-            </div>
-          </h1>
-        </div>
-      )} */}
-
       <h1 className="opacity-90 text-2xl font-bold mt-[25vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
           <img src="/code1.svg" alt="" className="text-white" />
@@ -198,14 +179,21 @@ export default function Hero() {
           </button>
         </div>
       </a>
-      <div className="py-[45vh] flex items-center justify-center text-5xl">
+      <div className="py-[45vh] flex items-center justify-center">
         <div
-          className="cursor-pointer transition-all duration-200 hover:animate-pulse hover:brightness-125 hover:text-teal-300 active:text-teal-500"
+          className="items-center justify-center flex flex-col cursor-pointer transition-all duration-200 hover:animate-pulse hover:brightness-125"
           onClick={scrollToTop}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="500"
         >
-          <div className="w-24" data-aos="fade-up" data-aos-duration="2000">
+          <div className="w-24">
             <img src="/rocket2.svg" alt="" className="-rotate-45" />
           </div>
+
+          {/* <p className="text-center font-bold capitalize text-xl">
+            Discover more below!
+          </p> */}
         </div>
       </div>
     </div>
