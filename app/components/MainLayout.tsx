@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from "react";
 import { Vortex } from "./VortexBackground";
 import { BackgroundGradientAnimation } from "./BackgroundGradientAnimation";
