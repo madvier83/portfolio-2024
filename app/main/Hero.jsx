@@ -59,7 +59,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <h1 className="opacity-90 text-2xl font-bold mt-[25vh] text-center font-mono flex flex-col items-center">
+      <h1 className="opacity-90 text-4xl font-bold mt-[25vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
           <img src="/code1.svg" alt="" className="text-white" />
         </div>
@@ -103,7 +103,7 @@ export default function Hero() {
         />
       </div>
 
-      <h1 className="opacity-90 text-2xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+      <h1 className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
           <img src="/planet2.svg" alt="" className="text-white" />
         </div>
@@ -117,7 +117,7 @@ export default function Hero() {
         <MalViewerCard></MalViewerCard>
         <GithubCard></GithubCard>
       </div>
-      <h1 className="opacity-90 text-2xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+      <h1 className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
           <img src="/telescope.svg" alt="" className="text-white" />
         </div>
@@ -127,7 +127,7 @@ export default function Hero() {
         <Timeline></Timeline>
       </div>
 
-      <h1 className="opacity-90 text-2xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+      <h1 className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
           <img src="/chat.svg" alt="" className="text-white" />
         </div>
@@ -179,23 +179,24 @@ export default function Hero() {
           </button>
         </div>
       </a>
-      <div className="py-[45vh] flex items-center justify-center">
+      <div className="pt-[30vh]"></div>
+      {/* <div className="my-[25vh] flex items-center justify-center z-50">
         <div
           className="items-center justify-center flex flex-col cursor-pointer transition-all duration-200 hover:animate-pulse hover:brightness-125"
           onClick={scrollToTop}
           data-aos="fade-up"
           data-aos-duration="2000"
-          data-aos-offset="500"
+          data-aos-offset="100"
         >
-          <div className="w-24">
+          <div className="w-24 z-50">
             <img src="/rocket2.svg" alt="" className="-rotate-45" />
           </div>
 
-          {/* <p className="text-center font-bold capitalize text-xl">
+          <p className="text-center font-bold capitalize text-xl">
             Discover more below!
-          </p> */}
+          </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
