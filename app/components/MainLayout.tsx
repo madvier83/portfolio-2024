@@ -7,22 +7,22 @@ import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
 export default function MainLayout({ children }) {
-  const scrollRef = useRef(null);
+  // const scrollRef = useRef(null);
 
-  useEffect(() => {
-    if (scrollRef.current) {
-      const scroll = new LocomotiveScroll({
-        el: scrollRef.current,
-        smooth: true, // optional: smooth scrolling
-        // other options here
-      });
+  // useEffect(() => {
+  //   if (scrollRef.current) {
+  //     const scroll = new LocomotiveScroll({
+  //       el: scrollRef.current,
+  //       smooth: true, // optional: smooth scrolling
+  //       // other options here
+  //     });
 
-      // Clean up
-      return () => {
-        scroll.destroy();
-      };
-    }
-  }, []);
+  //     // Clean up
+  //     return () => {
+  //       scroll.destroy();
+  //     };
+  //   }
+  // }, []);
 
   return (
     <div className="overflow-x-hidden overflow-y-hidden relative">
@@ -33,7 +33,8 @@ export default function MainLayout({ children }) {
         <BackgroundGradientAnimation />
       </div>
 
-      <div className="flex items-center justify-center z-50" ref={scrollRef}>
+      {/* <div className="flex items-center justify-center z-50" ref={scrollRef}> */}
+      <div className="flex items-center justify-center z-50">
         <div className="flex flex-col w-full max-w-5xl ">
           <MainNavbar></MainNavbar>
           {children}
