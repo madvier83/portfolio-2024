@@ -26,7 +26,7 @@ export default function MainLayout({ children }) {
 
   return (
     <div className="overflow-x-hidden overflow-y-hidden relative">
-      <div className="fixed w-full h-screen opacity-70 -z-50">
+      <div className="fixed w-full h-screen opacity-80 -z-50">
         <Vortex />
       </div>
       <div className="fixed w-full h-screen opacity-20 -z-50">
@@ -39,7 +39,7 @@ export default function MainLayout({ children }) {
           <MainNavbar></MainNavbar>
           {children}
 
-          <div className="absolute bottom-0 w-full overflow-hidden pb-16 -z-50 hidden lg:block overflow-x-hidden left-0 -hue-rotate-[30deg]">
+          <div className="absolute bottom-0 w-full overflow-hidden -z-50 hidden lg:block overflow-x-hidden left-0 -hue-rotate-[30deg]">
             <div className="flex justify-center relative w-full">
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#030014] to-[#030014]"></div>
               <video
@@ -47,10 +47,8 @@ export default function MainLayout({ children }) {
                 loop
                 autoPlay
                 muted
-                className="rotate-3 brightness-100 relative transform translate-y-1/2 w-[70vw]"
-              >
-                Your browser does not support the video tag.
-              </video>
+                className="rotate-3 brightness-100 relative transform translate-y-[32%] w-[70vw]"
+              ></video>
             </div>
           </div>
         </div>

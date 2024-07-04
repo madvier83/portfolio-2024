@@ -24,7 +24,7 @@ export default function MainNavbar() {
         </div>
         {/* <FontAwesomeIcon className="w-4 mr-4" icon={faCircle} /> */}
         <p className="text-xl tracking-wider">
-          Ad<span className="">vi</span>e Rifaldy
+          Ad<span className="">vi</span>e.R
         </p>
       </Link>
       <div className="flex gap-8 text-2xl">

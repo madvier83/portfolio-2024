@@ -54,12 +54,15 @@ export default function Hero() {
         <p className="text-3xl md:text-7xl font-bold my-8">
           Fullstack Web Developer From Bandung, Indonesia
         </p>
-        <div className="text-4xl flex items-center justify-center">
-          <FontAwesomeIcon className="animate-bounce w-4" icon={faCaretDown} />
+        <div className="text-4xl flex items-center justify-center mt-16">
+          <FontAwesomeIcon
+            className="animate-bounce w-4 opacity-50"
+            icon={faCaretDown}
+          />
         </div>
       </div>
 
-      <h1 className="opacity-90 text-4xl font-bold mt-[25vh] text-center font-mono flex flex-col items-center">
+      <h1 className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
           <img src="/code1.svg" alt="" className="text-white" />
         </div>
@@ -103,11 +106,11 @@ export default function Hero() {
         />
       </div>
 
-      <h1 className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+      <h1 className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
           <img src="/planet2.svg" alt="" className="text-white" />
         </div>
-        Highlighted Projects
+        Featured Works
       </h1>
       <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
         <ApdocCard></ApdocCard>
@@ -127,11 +130,11 @@ export default function Hero() {
         <Timeline></Timeline>
       </div>
 
-      <h1 className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+      <h1 className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center">
         <div className="w-24 mb-4">
           <img src="/chat.svg" alt="" className="text-white" />
         </div>
-        Stay Connected
+        Stay In Touch
       </h1>
 
       <div className="grid md:grid-cols-2 gap-4 mt-16 flex-col">
@@ -179,7 +182,11 @@ export default function Hero() {
           </button>
         </div>
       </a>
-      <div className="pt-[30vh]"></div>
+      <div className="pt-[35vh]">
+        {/* <p className="text-center opacity-20">
+          Copyright &copy; 2024 by Advie Rifaldy
+        </p> */}
+      </div>
       {/* <div className="my-[25vh] flex items-center justify-center z-50">
         <div
           className="items-center justify-center flex flex-col cursor-pointer transition-all duration-200 hover:animate-pulse hover:brightness-125"
