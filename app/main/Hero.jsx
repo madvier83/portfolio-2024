@@ -117,7 +117,7 @@ export default function Hero() {
         <RecyThingCard></RecyThingCard>
         <IndopalmCard></IndopalmCard>
         <SejatiLifeCard></SejatiLifeCard>
-        <MalViewerCard></MalViewerCard>
+        {/* <MalViewerCard></MalViewerCard> */}
         <GithubCard></GithubCard>
       </div>
       <h1 className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">

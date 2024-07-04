@@ -5,7 +5,7 @@ export default function ApdocCard() {
   return (
     <div className="card flex flex-col gap-4 p-4 group">
       <div className="card-img transition-all duration-500">
-        <Image src="/apdoc2crop.png" width={1000} height={700} alt="" />
+        <Image src="/apdoc2crop.png" width={1920} height={1080} alt="" />
       </div>
       <div className="h-full pt-8 px-4">
         <h1 className="text-2xl font-bold mb-4">APDOC Clinic System</h1>
