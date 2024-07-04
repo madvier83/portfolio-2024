@@ -26,7 +26,7 @@ export default function MainLayout({ children }) {
 
   return (
     <div className="overflow-x-hidden overflow-y-hidden relative">
-      <div className="fixed w-full h-screen opacity-50 -z-50">
+      <div className="fixed w-full h-screen opacity-70 -z-50">
         <Vortex />
       </div>
       <div className="fixed w-full h-screen opacity-20 -z-50">

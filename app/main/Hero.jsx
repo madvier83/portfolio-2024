@@ -90,7 +90,7 @@ export default function Hero() {
         <img src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
       </div>
-      <div className="backdrop-blur-sm mt-8 flex items-center justify-center">
+      <div className=" mt-8 flex items-center justify-center">
         <img
           className="hidden lg:block"
           src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=800"
