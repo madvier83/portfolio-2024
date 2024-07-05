@@ -41,9 +41,9 @@ export default function Hero() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen px-8 overflow-y-hidden">
+    <div className="flex flex-col min-h-screen overflow-y-hidden">
       <div
-        className="z-20 mt-[25vh] text-center"
+        className="z-20 mt-[20vh] text-center"
         data-aos="fade"
         data-aos-duration="1000"
         data-aos-delay="1000"
@@ -65,13 +65,21 @@ export default function Hero() {
         </div>
       </div>
 
-      <h1 className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center">
+      <h1
+        className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="w-24 mb-4">
           <img src="/code1.svg" alt="" className="text-white" />
         </div>
         Tech Skills
       </h1>
-      <div className="flex flex-wrap items-center justify-center gap-4 mt-16">
+      <div
+        className="flex flex-wrap items-center justify-center gap-4 mt-16"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <img src="https://svgl-badge.vercel.app/api/Language/HTML5?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Language/CSS?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Language/JavaScript?theme=dark" />
@@ -96,7 +104,11 @@ export default function Hero() {
         <img src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
       </div>
-      <div className=" mt-8 flex items-center justify-center">
+      <div
+        className=" mt-8 flex items-center justify-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <img
           className="hidden lg:block"
           src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=800"
@@ -109,13 +121,21 @@ export default function Hero() {
         />
       </div>
 
-      <h1 className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center">
+      <h1
+        className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="w-24 mb-4">
           <img src="/planet2.svg" alt="" className="text-white" />
         </div>
         Featured Works
       </h1>
-      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div
+        className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <ApdocCard></ApdocCard>
         <RecyThingCard></RecyThingCard>
         <IndopalmCard></IndopalmCard>
@@ -123,24 +143,40 @@ export default function Hero() {
         {/* <MalViewerCard></MalViewerCard> */}
         <GithubCard></GithubCard>
       </div>
-      <h1 className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center">
+      <h1
+        className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="w-24 mb-4">
           <img src="/telescope.svg" alt="" className="text-white" />
         </div>
         Career Journey
       </h1>
-      <div className="flex items-center mt-16 lg:mx-4">
+      <div
+        className="flex items-center mt-16 lg:mx-4"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <Timeline></Timeline>
       </div>
 
-      <h1 className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center">
+      <h1
+        className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="w-24 mb-4">
           <img src="/chat.svg" alt="" className="text-white" />
         </div>
         Stay In Touch
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-4 mt-16 flex-col">
+      <div
+        className="grid md:grid-cols-2 gap-4 mt-16 flex-col"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=082376932445"
@@ -177,6 +213,8 @@ export default function Hero() {
       <a
         href="https://drive.google.com/file/d/19UiCksWII06ICktvRgPQQLtlb-xlcBry/view?usp=sharing"
         target="_blank"
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
         <div className="flex justify-center mt-4">
           <button className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-rose-400 bg-opacity-20 backdrop-blur-sm   hover:border-rose-500 border border-gray-800 text-lg cursor-pointer flex items-center justify-between min-w-80 w-full">

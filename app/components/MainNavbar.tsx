@@ -22,9 +22,9 @@ export default function MainNavbar() {
   };
   return (
     <div
-      className="flex justify-between items-center h-0 w-full py-8 px-4 mx-4 backdrop-blur-sm bg-black bg-opacity-20 border-gray-800 rounded-full border my-8 z-50 max-w-5xl"
-      // data-aos="fade"
-      // data-aos-duration="1000"
+      className="flex justify-between items-center h-0 w-full py-8 px-4 lg:mx-4 backdrop-blur-sm bg-black bg-opacity-20 border-gray-800 rounded-full border my-12 z-50 max-w-5xl"
+      data-aos="fade-down"
+      data-aos-duration="1000"
     >
       <div
         onClick={scrollToTop}
