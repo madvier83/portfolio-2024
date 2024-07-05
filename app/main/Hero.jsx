@@ -112,7 +112,7 @@ export default function Hero() {
         </div>
         Featured Works
       </h1>
-      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
         <ApdocCard></ApdocCard>
         <RecyThingCard></RecyThingCard>
         <IndopalmCard></IndopalmCard>

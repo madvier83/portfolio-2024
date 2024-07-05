@@ -3,7 +3,7 @@ import React from "react";
 
 export default function SejatiLifeCard() {
   return (
-    <div className="card flex flex-col gap-4 p-4 group col-span-2">
+    <div className="card flex flex-col gap-4 p-4 group lg:col-span-2">
       {/* <div className="card-img transition-all duration-500">
         <img
           className="brightness-50"
