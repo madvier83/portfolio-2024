@@ -45,18 +45,21 @@ export default function Hero() {
       <div
         className="z-20 mt-[25vh] text-center"
         data-aos="fade"
-        data-aos-duration="3000"
+        data-aos-duration="1000"
         data-aos-delay="1000"
       >
-        <h1 className="opacity-50 text-xl font-mono">
+        <h1 className="text-gray-500 text-xl font-mono">
           Welcome to My Portfolio!
         </h1>
-        <p className="text-3xl md:text-7xl font-bold my-8">
-          Fullstack Web Developer From Bandung, Indonesia
+        <p className="text-3xl md:text-7xl font-bold mt-8">
+          Fullstack Web Developer
+        </p>
+        <p className="text-3xl md:text-7xl font-bold mb-8 mt-4 text-gray-500">
+          From Bandung, Indonesia
         </p>
         <div className="text-4xl flex items-center justify-center mt-16">
           <FontAwesomeIcon
-            className="animate-bounce w-4 opacity-50"
+            className="animate-bounce w-4 text-gray-500"
             icon={faCaretDown}
           />
         </div>
@@ -112,7 +115,7 @@ export default function Hero() {
         </div>
         Featured Works
       </h1>
-      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
         <ApdocCard></ApdocCard>
         <RecyThingCard></RecyThingCard>
         <IndopalmCard></IndopalmCard>

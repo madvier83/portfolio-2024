@@ -12,23 +12,6 @@ export default function MainLayout({ children }) {
     // called every scroll
   });
 
-  // const scrollRef = useRef(null);
-
-  // useEffect(() => {
-  //   if (scrollRef.current) {
-  //     const scroll = new LocomotiveScroll({
-  //       el: scrollRef.current,
-  //       smooth: true, // optional: smooth scrolling
-  //       // other options here
-  //     });
-
-  //     // Clean up
-  //     return () => {
-  //       scroll.destroy();
-  //     };
-  //   }
-  // }, []);
-
   return (
     <ReactLenis root>
       <div className="overflow-x-hidden overflow-y-hidden relative">
