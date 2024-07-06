@@ -44,7 +44,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen overflow-y-hidden md:px-8">
+    <div className="flex flex-col min-h-screen overflow-y-hidden px-8">
       <div
         className="z-20 mt-[20vh] text-center"
         data-aos="fade"
@@ -54,10 +54,10 @@ export default function Hero() {
         <h1 className="text-slate-500 text-2xl font-mono">
           Welcome to My Portfolio!
         </h1>
-        <p className="text-3xl md:text-7xl font-bold mt-8">
+        <p className="text-4xl md:text-7xl font-bold mt-8">
           Fullstack Web Developer
         </p>
-        <p className="text-3xl md:text-7xl mb-8 mt-4 text-slate-500">
+        <p className="text-4xl md:text-7xl mb-8 mt-4 text-slate-500">
           From Bandung, Indonesia
         </p>
         <div className="text-4xl flex items-center justify-center mt-16">
