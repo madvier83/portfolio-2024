@@ -27,7 +27,9 @@ export default function Hero() {
   const [reachBottom, setReachBottom] = useState(false);
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
     AOS.refresh();
   }, []);
 
@@ -41,42 +43,46 @@ export default function Hero() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen overflow-y-hidden">
+    <div className="flex flex-col min-h-screen overflow-y-hidden md:px-8">
       <div
         className="z-20 mt-[20vh] text-center"
         data-aos="fade"
         data-aos-duration="1000"
         data-aos-delay="1000"
       >
-        <h1 className="text-gray-500 text-xl font-mono">
+        <h1 className="text-slate-500 text-2xl font-mono">
           Welcome to My Portfolio!
         </h1>
         <p className="text-3xl md:text-7xl font-bold mt-8">
           Fullstack Web Developer
         </p>
-        <p className="text-3xl md:text-7xl font-bold mb-8 mt-4 text-gray-500">
+        <p className="text-3xl md:text-7xl mb-8 mt-4 text-slate-500">
           From Bandung, Indonesia
         </p>
         <div className="text-4xl flex items-center justify-center mt-16">
-          <FontAwesomeIcon
-            className="animate-bounce w-4 text-gray-500"
-            icon={faCaretDown}
-          />
+          <FontAwesomeIcon className="animate-bounce w-4" icon={faCaretDown} />
         </div>
       </div>
 
       <h1
-        className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center"
+        className="opacity-90 mt-[40vh] font-mono flex flex-col"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="w-24 mb-4">
-          <img src="/code1.svg" alt="" className="text-white" />
+        <div className="w-32">
+          <img
+            src="/code1.svg"
+            alt=""
+            className="text-white backdrop-blur-sm"
+          />
         </div>
-        Tech Skills
+        <p className="text-3xl md:text-7xl font-bold mt-8">Skills</p>
+        <p className="text-3xl md:text-2xl mb-8 mt-4 text-slate-500">
+          My technical expertise
+        </p>
       </h1>
       <div
-        className="flex flex-wrap items-center justify-center gap-4 mt-16"
+        className="flex flex-wrap items-center justify- gap-4 mt-16"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -105,34 +111,41 @@ export default function Hero() {
         <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
       </div>
       <div
-        className=" mt-8 flex items-center justify-center"
+        className=" mt-8 flex items-center"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
         <img
-          className="hidden lg:block"
-          src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=800"
+          className="hidden lg:block border border-stone-800 rounded-lg"
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=171717&card_width=800"
           alt="madvier83"
         />
         <img
-          className="block lg:hidden"
-          src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=00000000&card_width=400"
+          className="block lg:hidden border border-stone-800 rounded-lg"
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=madvier83&locale=en&layout=compact&theme=dark&hide_border=true&bg_color=171717&card_width=400"
           alt="madvier83"
         />
       </div>
 
       <h1
-        className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center"
+        className="opacity-90 mt-[40vh] font-mono flex flex-col"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="w-24 mb-4">
-          <img src="/planet2.svg" alt="" className="text-white" />
+        <div className="w-32">
+          <img
+            src="/planet2.svg"
+            alt=""
+            className="text-white backdrop-blur-sm"
+          />
         </div>
-        Featured Works
+        <p className="text-3xl md:text-7xl font-bold mt-8">Projects</p>
+        <p className="text-3xl md:text-2xl mb-8 mt-4 text-slate-500">
+          Highlighted projects
+        </p>
       </h1>
       <div
-        className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10"
+        className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-9"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -143,15 +156,23 @@ export default function Hero() {
         {/* <MalViewerCard></MalViewerCard> */}
         <GithubCard></GithubCard>
       </div>
+
       <h1
-        className="opacity-90 text-4xl font-bold mt-[30vh] text-center font-mono flex flex-col items-center"
+        className="opacity-90 mt-[40vh] font-mono flex flex-col"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="w-24 mb-4">
-          <img src="/telescope.svg" alt="" className="text-white" />
+        <div className="w-32">
+          <img
+            src="/telescope.svg"
+            alt=""
+            className="text-white backdrop-blur-sm"
+          />
         </div>
-        Career Journey
+        <p className="text-3xl md:text-7xl font-bold mt-8">Career</p>
+        <p className="text-3xl md:text-2xl mb-8 mt-4 text-slate-500">
+          My professional path
+        </p>
       </h1>
       <div
         className="flex items-center mt-16 lg:mx-4"
@@ -162,25 +183,24 @@ export default function Hero() {
       </div>
 
       <h1
-        className="opacity-90 text-4xl font-bold mt-[40vh] text-center font-mono flex flex-col items-center"
+        className="opacity-90 mt-[40vh] font-mono flex flex-col"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="w-24 mb-4">
-          <img src="/chat.svg" alt="" className="text-white" />
+        <div className="w-32">
+          <img src="/chat.svg" alt="" className="text-white backdrop-blur-sm" />
         </div>
-        Stay In Touch
+        <p className="text-3xl md:text-7xl font-bold mt-8">Contact</p>
+        <p className="text-3xl md:text-2xl mb-8 mt-4 text-slate-500">
+          Stay In Touch
+        </p>
       </h1>
 
-      <div
-        className="grid md:grid-cols-2 gap-4 mt-16 flex-col"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
+      <div className="grid md:grid-cols-2 gap-4 mt-10 flex-col">
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=082376932445"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-teal-400 bg-opacity-20 backdrop-blur-sm  hover:border-emerald-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
+          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-teal-400 bg-opacity-20 backdrop-blur-sm  hover:border-emerald-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
         >
           <p>Whatsapp</p>
           <p className="text-sm opacity-50">0823 7693 2445</p>
@@ -188,7 +208,7 @@ export default function Hero() {
         <a
           // target="_blank"
           href="mailto:madvier83@gmail.com"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-sky-400 bg-opacity-20 backdrop-blur-sm hover:border-sky-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
+          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-sky-400 bg-opacity-20 backdrop-blur-sm hover:border-sky-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
         >
           <p>Email</p>
           <p className="text-sm opacity-50">madvier83@gmail.com</p>
@@ -196,7 +216,7 @@ export default function Hero() {
         <a
           target="_blank"
           href="https://www.linkedin.com/in/advierifaldy/"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-blue-400 bg-opacity-20 backdrop-blur-sm   hover:border-blue-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
+          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-blue-400 bg-opacity-20 backdrop-blur-sm   hover:border-blue-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
         >
           <p>LinkedIn</p>
           <p className="text-sm opacity-50">/advierifaldy</p>
@@ -204,7 +224,7 @@ export default function Hero() {
         <a
           target="_blank"
           href="https://github.com/madvier83"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-violet-400 bg-opacity-20 backdrop-blur-sm   hover:border-violet-500 border border-gray-800 text-lg cursor-pointer flex justify-between items-center"
+          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-violet-400 bg-opacity-20 backdrop-blur-sm   hover:border-violet-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
         >
           <p>GitHub</p>
           <p className="text-sm opacity-50">/madvier83</p>
@@ -213,11 +233,9 @@ export default function Hero() {
       <a
         href="https://drive.google.com/file/d/19UiCksWII06ICktvRgPQQLtlb-xlcBry/view?usp=sharing"
         target="_blank"
-        data-aos="fade-up"
-        data-aos-duration="1000"
       >
         <div className="flex justify-center mt-4">
-          <button className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-rose-400 bg-opacity-20 backdrop-blur-sm   hover:border-rose-500 border border-gray-800 text-lg cursor-pointer flex items-center justify-between min-w-80 w-full">
+          <button className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-rose-400 bg-opacity-20 backdrop-blur-sm   hover:border-rose-500 border border-slate-800 text-lg cursor-pointer flex items-center justify-between min-w-80 w-full">
             <p>Download CV</p>
             <p className="text-sm opacity-50">Updated May 2024</p>
           </button>

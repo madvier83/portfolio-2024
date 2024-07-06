@@ -43,7 +43,7 @@ function Timeline() {
             rowSpan={8}
           >
             <div className="w-full flex flex-col paragraph relative">
-              {/* <div className="border-t-2 border-violet-600 w-[505px] border-dashed absolute right-[445px] animate-pulse opacity-35 top-3 hidden lg:block -z-50"></div> */}
+              {/* <div className="border-t-2 border-violet-600 w-[475px] border-dashed absolute right-[415px] animate-pulse opacity-35 top-3 hidden lg:block -z-50"></div> */}
               <p className=" mb-4 text-violet-600 font-bold">Now</p>
               <p className="font-semibold">Freelance</p>
 
@@ -82,7 +82,7 @@ function Timeline() {
             rowSpan={15}
           >
             <div className="w-full flex flex-col paragraph relative">
-              <div className="border-t-2 border-violet-600 w-[505px] border-dashed absolute right-[445px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
+              <div className="border-t-2 border-violet-600 w-[475px] border-dashed absolute right-[415px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
               <p className=" mb-4 text-violet-600 font-bold">
                 Sep 2022 - Sep 2023
               </p>
@@ -238,7 +238,7 @@ function Timeline() {
             rowSpan={9}
           >
             <div className="w-full flex flex-col paragraph relative">
-              <div className="border-t-2 border-emerald-600 w-[505px] border-dashed absolute right-[445px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
+              <div className="border-t-2 border-emerald-600 w-[475px] border-dashed absolute right-[415px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
               <p className=" mb-4 text-emerald-600">Oct 2019 - Mar 2020</p>
               <p className="font-semibold mb-4">Fullstack Developer Intern</p>
               <p className="opacity-50">CyberLabs Forensics</p>
@@ -308,7 +308,7 @@ function Timeline() {
             rowSpan={6}
           >
             <div className="w-full flex flex-col paragraph relative">
-              <div className="border-t-2 border-emerald-600 w-[505px] border-dashed absolute right-[445px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
+              <div className="border-t-2 border-emerald-600 w-[475px] border-dashed absolute right-[415px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
               <p className=" mb-4 text-emerald-600">18 Sep 2018</p>
               <p className="font-semibold">🌱 First Hello World!</p>
 
