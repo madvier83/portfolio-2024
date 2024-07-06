@@ -1,5 +1,6 @@
 import {
   faCaretDown,
+  faCaretUp,
   faRocket,
   faSatellite,
   faShuttleSpace,
@@ -69,15 +70,15 @@ export default function Hero() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="w-32">
+        <div className="w-24 md:w-32">
           <img
             src="/code1.svg"
             alt=""
             className="text-white backdrop-blur-sm"
           />
         </div>
-        <p className="text-3xl md:text-7xl font-bold mt-8">Skills</p>
-        <p className="text-3xl md:text-2xl mb-8 mt-4 text-slate-500">
+        <p className="text-4xl md:text-7xl font-bold mt-8">Skills</p>
+        <p className="text-xl md:text-2xl mb-8 mt-4 text-slate-500">
           My technical expertise
         </p>
       </h1>
@@ -132,15 +133,15 @@ export default function Hero() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="w-32">
+        <div className="w-24 md:w-32">
           <img
             src="/planet2.svg"
             alt=""
             className="text-white backdrop-blur-sm"
           />
         </div>
-        <p className="text-3xl md:text-7xl font-bold mt-8">Projects</p>
-        <p className="text-3xl md:text-2xl mb-8 mt-4 text-slate-500">
+        <p className="text-4xl md:text-7xl font-bold mt-8">Projects</p>
+        <p className="text-xl md:text-2xl mb-8 mt-4 text-slate-500">
           Highlighted projects
         </p>
       </h1>
@@ -162,15 +163,15 @@ export default function Hero() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="w-32">
+        <div className="w-24 md:w-32">
           <img
             src="/telescope.svg"
             alt=""
             className="text-white backdrop-blur-sm"
           />
         </div>
-        <p className="text-3xl md:text-7xl font-bold mt-8">Career</p>
-        <p className="text-3xl md:text-2xl mb-8 mt-4 text-slate-500">
+        <p className="text-4xl md:text-7xl font-bold mt-8">Career</p>
+        <p className="text-xl md:text-2xl mb-8 mt-4 text-slate-500">
           My professional path
         </p>
       </h1>
@@ -187,65 +188,68 @@ export default function Hero() {
         data-aos="fade-up"
         data-aos-duration="1000"
       >
-        <div className="w-32">
+        <div className="w-24 md:w-32">
           <img src="/chat.svg" alt="" className="text-white backdrop-blur-sm" />
         </div>
-        <p className="text-3xl md:text-7xl font-bold mt-8">Contact</p>
-        <p className="text-3xl md:text-2xl mb-8 mt-4 text-slate-500">
+        <p className="text-4xl md:text-7xl font-bold mt-8">Contact</p>
+        <p className="text-xl md:text-2xl mb-8 mt-4 text-slate-500">
           Stay In Touch
         </p>
       </h1>
 
-      <div className="grid md:grid-cols-2 gap-4 mt-10 flex-col">
+      <div className="" data-aos="fade-up" data-aos-duration="1000">
+        <div className="grid md:grid-cols-2 gap-4 mt-10 flex-col">
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=082376932445"
+            className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-teal-400 bg-opacity-20 backdrop-blur-sm  hover:border-emerald-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
+          >
+            <p>Whatsapp</p>
+            <p className="text-sm opacity-50">0823 7693 2445</p>
+          </a>
+          <a
+            // target="_blank"
+            href="mailto:madvier83@gmail.com"
+            className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-sky-400 bg-opacity-20 backdrop-blur-sm hover:border-sky-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
+          >
+            <p>Email</p>
+            <p className="text-sm opacity-50">madvier83@gmail.com</p>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/advierifaldy/"
+            className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-blue-400 bg-opacity-20 backdrop-blur-sm   hover:border-blue-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
+          >
+            <p>LinkedIn</p>
+            <p className="text-sm opacity-50">/advierifaldy</p>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/madvier83"
+            className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-violet-400 bg-opacity-20 backdrop-blur-sm   hover:border-violet-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
+          >
+            <p>GitHub</p>
+            <p className="text-sm opacity-50">/madvier83</p>
+          </a>
+        </div>
         <a
+          href="https://drive.google.com/file/d/19UiCksWII06ICktvRgPQQLtlb-xlcBry/view?usp=sharing"
           target="_blank"
-          href="https://api.whatsapp.com/send?phone=082376932445"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-teal-400 bg-opacity-20 backdrop-blur-sm  hover:border-emerald-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
         >
-          <p>Whatsapp</p>
-          <p className="text-sm opacity-50">0823 7693 2445</p>
-        </a>
-        <a
-          // target="_blank"
-          href="mailto:madvier83@gmail.com"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-sky-400 bg-opacity-20 backdrop-blur-sm hover:border-sky-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
-        >
-          <p>Email</p>
-          <p className="text-sm opacity-50">madvier83@gmail.com</p>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/advierifaldy/"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-blue-400 bg-opacity-20 backdrop-blur-sm   hover:border-blue-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
-        >
-          <p>LinkedIn</p>
-          <p className="text-sm opacity-50">/advierifaldy</p>
-        </a>
-        <a
-          target="_blank"
-          href="https://github.com/madvier83"
-          className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-violet-400 bg-opacity-20 backdrop-blur-sm   hover:border-violet-500 border border-slate-800 text-lg cursor-pointer flex justify-between items-center"
-        >
-          <p>GitHub</p>
-          <p className="text-sm opacity-50">/madvier83</p>
+          <div className="flex justify-center mt-4">
+            <button className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-rose-400 bg-opacity-20 backdrop-blur-sm   hover:border-rose-500 border border-slate-800 text-lg cursor-pointer flex items-center justify-between min-w-80 w-full">
+              <p>Download CV</p>
+              <p className="text-sm opacity-50">Updated May 2024</p>
+            </button>
+          </div>
         </a>
       </div>
-      <a
-        href="https://drive.google.com/file/d/19UiCksWII06ICktvRgPQQLtlb-xlcBry/view?usp=sharing"
-        target="_blank"
-      >
-        <div className="flex justify-center mt-4">
-          <button className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-rose-400 bg-opacity-20 backdrop-blur-sm   hover:border-rose-500 border border-slate-800 text-lg cursor-pointer flex items-center justify-between min-w-80 w-full">
-            <p>Download CV</p>
-            <p className="text-sm opacity-50">Updated May 2024</p>
-          </button>
-        </div>
-      </a>
       <div className="pt-[35vh]">
         {/* <p className="text-center opacity-20">
           Copyright &copy; 2024 by Advie Rifaldy
         </p> */}
       </div>
+
       {/* <div className="my-[25vh] flex items-center justify-center z-50">
         <div
           className="items-center justify-center flex flex-col cursor-pointer transition-all duration-200 hover:animate-pulse hover:brightness-125"

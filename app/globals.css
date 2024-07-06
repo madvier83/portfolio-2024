@@ -32,7 +32,7 @@ body {
   @apply font-mono leading-7 tracking-wide;
 }
 .card {
-  @apply bg-slate-800 hover:bg-teal-500 bg-opacity-10 hover:bg-opacity-10 backdrop-blur-sm hover:backdrop-blur-md rounded-3xl border transition-all duration-500 border-slate-800 hover:border-teal-600  text-white overflow-clip;
+  @apply bg-slate-800 text-justify hover:bg-teal-500 bg-opacity-10 hover:bg-opacity-10 backdrop-blur-sm hover:backdrop-blur-md rounded-3xl border transition-all duration-500 border-slate-800 hover:border-teal-600  text-white overflow-clip;
 }
 
 .card-img {

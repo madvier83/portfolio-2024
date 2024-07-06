@@ -25,7 +25,7 @@ function Timeline() {
           >
             <div className="w-full flex flex-col paragraph group">
               <p className=" mb-4 text-teal-600 font-bold">Oct 2021 - 2025</p>
-              <p className="font-semibold mb-4">Education</p>
+              <p className="font-semibold mb-4 text-xl">Education</p>
               <p className="opacity-50">
                 STMIK Mardira Indonesia
                 <br />
@@ -44,8 +44,8 @@ function Timeline() {
           >
             <div className="w-full flex flex-col paragraph relative">
               {/* <div className="border-t-2 border-violet-600 w-[475px] border-dashed absolute right-[415px] animate-pulse opacity-35 top-3 hidden lg:block -z-50"></div> */}
-              <p className=" mb-4 text-violet-600 font-bold">Now</p>
-              <p className="font-semibold">Freelance</p>
+              <p className=" mb-4 text-violet-500 font-bold">Now</p>
+              <p className="font-semibold text-xl">Freelance</p>
 
               <p className=" mt-4 text-gray-500"></p>
             </div>
@@ -83,10 +83,10 @@ function Timeline() {
           >
             <div className="w-full flex flex-col paragraph relative">
               <div className="border-t-2 border-violet-600 w-[475px] border-dashed absolute right-[415px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
-              <p className=" mb-4 text-violet-600 font-bold">
+              <p className=" mb-4 text-violet-500 font-bold">
                 Sep 2022 - Sep 2023
               </p>
-              <p className="font-semibold mb-4">Web Developer</p>
+              <p className="font-semibold mb-4 text-xl">Web Developer</p>
               <p className="opacity-50">
                 PT. Oasis Mitra Tritunggal <br /> Cursor.ID
               </p>
@@ -94,7 +94,7 @@ function Timeline() {
           </td>
         </tr>
         <tr>
-          <td className="text-violet-600 font-bold">&bull;</td>
+          <td className="text-violet-500 font-bold">&bull;</td>
         </tr>
         <tr>
           <td className="font-bold opacity-15">&bull;</td>
@@ -179,7 +179,7 @@ function Timeline() {
           >
             <div className="w-full flex flex-col paragraph">
               <p className=" mb-4 text-teal-600">2018 - 2021</p>
-              <p className="font-semibold mb-4">Education</p>
+              <p className="font-semibold mb-4 text-xl">Education</p>
               <p className="opacity-50">
                 SMKN 1 Katapang <br /> Software Engineering
               </p>
@@ -240,7 +240,9 @@ function Timeline() {
             <div className="w-full flex flex-col paragraph relative">
               <div className="border-t-2 border-emerald-600 w-[475px] border-dashed absolute right-[415px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
               <p className=" mb-4 text-emerald-600">Oct 2019 - Mar 2020</p>
-              <p className="font-semibold mb-4">Fullstack Developer Intern</p>
+              <p className="font-semibold mb-4 text-xl">
+                Fullstack Developer <br /> Intern
+              </p>
               <p className="opacity-50">CyberLabs Forensics</p>
 
               <p className=" mt-4 text-gray-500"></p>
@@ -310,7 +312,7 @@ function Timeline() {
             <div className="w-full flex flex-col paragraph relative">
               <div className="border-t-2 border-emerald-600 w-[475px] border-dashed absolute right-[415px] animate-pulse opacity-35 top-3 hidden lg:block"></div>
               <p className=" mb-4 text-emerald-600">18 Sep 2018</p>
-              <p className="font-semibold">🌱 First Hello World!</p>
+              <p className="font-semibold text-xl">🌱 First Hello World!</p>
 
               <p className=" mt-4 text-gray-500"></p>
             </div>
