@@ -9,7 +9,7 @@ export default function RecyThingCard() {
       </div>
       <div className="h-full py-8 px-4">
         <h1 className="text-2xl font-bold mb-4">RecyThing</h1>
-        <p className="opacity-50">
+        <p className="text-slate-500">
           This innovative application is designed as a leading solution to
           overcome problems surrounding recycling waste and reporting piles and
           violations of waste disposal.

@@ -1,24 +1,15 @@
-import {
-  faCaretDown,
-  faCaretUp,
-  faRocket,
-  faSatellite,
-  faShuttleSpace,
-} from "@fortawesome/free-solid-svg-icons";
-import { faFileCode } from "@fortawesome/free-regular-svg-icons";
+import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import ApdocCard from "../components/cards/ApdocCard";
 import IndopalmCard from "../components/cards/IndopalmCard";
 import SejatiLifeCard from "../components/cards/SejatiLifeCard";
 import MalViewerCard from "../components/cards/MalViewerCard";
 import RecyThingCard from "../components/cards/RecyThingCard";
 import GithubCard from "../components/cards/GithubCard";
+import VicallsCard from "../components/cards/VicallsCard";
 
 import Timeline from "../about/Timeline";
 import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { faSpaceAwesome } from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -60,8 +51,9 @@ export default function Hero() {
         <p className="text-4xl md:text-7xl mb-8 mt-4 text-slate-500">
           From Bandung, Indonesia
         </p>
-        <div className="text-4xl flex items-center justify-center mt-16">
+        <div className="text-4xl flex items-center justify-center mt-32">
           <FontAwesomeIcon className="animate-bounce w-4" icon={faCaretDown} />
+          {/* <img src="/scroll.gif" alt="" className="w-32 opacity-" /> */}
         </div>
       </div>
 
@@ -95,9 +87,11 @@ export default function Hero() {
         <img src="https://svgl-badge.vercel.app/api/Library/React?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Library/Redux?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Framework/Next.js?theme=dark" />
+        <img src="https://svgl-badge.vercel.app/api/Library/shadcnui?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Framework/Tailwind%20CSS?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Framework/Bootstrap?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Framework/Laravel?theme=dark" />
+
         {/* <img src="https://svgl-badge.vercel.app/api/Language/Php?theme=dark" /> */}
 
         <img src="https://svgl-badge.vercel.app/api/Database/MySQL?theme=dark" />
@@ -106,10 +100,10 @@ export default function Hero() {
         <img src="https://svgl-badge.vercel.app/api/Language/Dart?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Framework/Flutter?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Hosting/Firebase?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Software/Visual%20Studio%20Code?theme=dark" />
         <img src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" />
+        {/* <img src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" /> */}
         <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
+        <img src="https://svgl-badge.vercel.app/api/Software/Visual%20Studio%20Code?theme=dark" />
       </div>
       <div
         className=" mt-8 flex items-center"
@@ -142,19 +136,20 @@ export default function Hero() {
         </div>
         <p className="text-4xl md:text-7xl font-bold mt-8">Projects</p>
         <p className="text-xl md:text-2xl mb-8 mt-4 text-slate-500">
-          Highlighted projects
+          Highlighted works
         </p>
       </h1>
       <div
-        className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-9"
+        className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
         <ApdocCard></ApdocCard>
         <RecyThingCard></RecyThingCard>
+        <VicallsCard></VicallsCard>
         <IndopalmCard></IndopalmCard>
         <SejatiLifeCard></SejatiLifeCard>
-        {/* <MalViewerCard></MalViewerCard> */}
+        <MalViewerCard></MalViewerCard>
         <GithubCard></GithubCard>
       </div>
 

@@ -6,16 +6,43 @@ import MainNavbar from "./MainNavbar";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
+import CursorTrail from "../components/CursorTrail";
+import { TracingBeam } from "./TracingBeam";
 
 export default function MainLayout({ children }) {
-  const lenis = useLenis(({ scroll }) => {
-    // called every scroll
-  });
+  const lenis = useLenis(({ scroll }) => {});
+
+  const backgroundRef = useRef(null);
+
+  const handleMouseMove = (e) => {
+    const { clientX, clientY } = e;
+    const { innerWidth, innerHeight } = window;
+
+    // Calculate the percentage offset
+    const offsetX = (clientX / innerWidth - 0.5) * 10;
+    const offsetY = (clientY / innerHeight - 0.5) * 10;
+
+    // Apply the transformation to the background element
+    if (backgroundRef.current) {
+      backgroundRef.current.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(1.1)`;
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
 
   return (
     <ReactLenis root>
       <div className="overflow-x-hidden overflow-y-hidden relative">
-        <div className="fixed w-full h-screen opacity-80 -z-50">
+        <div
+          className="fixed w-full h-screen opacity-80 -z-50"
+          ref={backgroundRef}
+        >
           <Vortex />
         </div>
         <div className="fixed w-full h-screen opacity-20 -z-50">
@@ -44,6 +71,7 @@ export default function MainLayout({ children }) {
             </div>
           </div>
         </div>
+        {/* <CursorTrail /> */}
       </div>
     </ReactLenis>
   );

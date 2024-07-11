@@ -8,8 +8,8 @@ export default function ApdocCard() {
         <Image src="/apdoc2crop.png" width={1920} height={1080} alt="" />
       </div>
       <div className="h-full pt-8 px-4">
-        <h1 className="text-2xl font-bold mb-4">APDOC Clinic System</h1>
-        <p className="opacity-50">
+        <h1 className="text-2xl font-bold mb-4">APDOC - Clinic System</h1>
+        <p className="text-slate-500">
           The Best Solution for Managing Your Electronic Medical Records APDOC
           Clinic System is here to enhance the efficiency and management of your
           clinic.

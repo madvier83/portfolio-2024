@@ -36,7 +36,7 @@ body {
 }
 
 .card-img {
-  @apply rounded-xl h-52 delay-100 duration-1000 border group-hover:border-teal-500 brightness-75 group-hover:brightness-110 border-slate-800 group-hover:transition-all group-hover:duration-500 overflow-clip;
+  @apply rounded-xl h-52 duration-500 border group-hover:border-teal-500 brightness-75 group-hover:brightness-110 border-slate-800 group-hover:transition-all group-hover:duration-500 overflow-clip;
 }
 
 .card-link {

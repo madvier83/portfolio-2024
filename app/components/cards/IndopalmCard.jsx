@@ -9,7 +9,7 @@ export default function IndopalmCard() {
       </div>
       <div className="h-full py-8 px-4">
         <h1 className="text-2xl font-bold mb-4">Indopalm Enterprise</h1>
-        <p className="opacity-50">
+        <p className="text-slate-500">
           Company Profile of the Leading Manufacturer and Wholesale Supplier for
           Indonesian Coconut Charcoal Briquettes.
         </p>

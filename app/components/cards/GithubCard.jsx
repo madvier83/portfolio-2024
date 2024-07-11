@@ -14,7 +14,7 @@ export default function SejatiLifeCard() {
       </div> */}
       <div className="h-full p-4 lg:p-8 px-4">
         <h1 className="text-2xl font-bold mb-4">More On Github</h1>
-        <p className="opacity-50">
+        <p className="text-slate-500">
           Dive into my GitHub repository to discover a diverse array of projects
           that highlight my skills and passion in programming.
         </p>

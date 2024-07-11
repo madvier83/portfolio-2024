@@ -9,9 +9,9 @@ export default function MalViewerCard() {
       </div>
       <div className="h-full py-8 px-4">
         <h1 className="text-2xl font-bold mb-4">MAL Viewer</h1>
-        <p className="opacity-50">
-          MyAnimeList Viewer is a replica of the popular MyAnimeList website,
-          used by anime and movie fans to search and manage their movie list.
+        <p className="text-slate-500">
+          MAL Viewer is a clone of MyAnimeList website in mobile app, used by
+          anime fans to search and manage their anime list.
         </p>
         <div className="flex flex-wrap gap-2 mt-8">
           <img src="https://svgl-badge.vercel.app/api/Hosting/Firebase?theme=dark" />

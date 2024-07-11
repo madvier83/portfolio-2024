@@ -26,7 +26,7 @@ function Timeline() {
             <div className="w-full flex flex-col paragraph group">
               <p className=" mb-4 text-teal-600 font-bold">Oct 2021 - 2025</p>
               <p className="font-semibold mb-4 text-xl">Education</p>
-              <p className="opacity-50">
+              <p className="text-slate-500">
                 STMIK Mardira Indonesia
                 <br />
                 Computer Science
@@ -87,7 +87,7 @@ function Timeline() {
                 Sep 2022 - Sep 2023
               </p>
               <p className="font-semibold mb-4 text-xl">Web Developer</p>
-              <p className="opacity-50">
+              <p className="text-slate-500">
                 PT. Oasis Mitra Tritunggal <br /> Cursor.ID
               </p>
             </div>
@@ -180,7 +180,7 @@ function Timeline() {
             <div className="w-full flex flex-col paragraph">
               <p className=" mb-4 text-teal-600">2018 - 2021</p>
               <p className="font-semibold mb-4 text-xl">Education</p>
-              <p className="opacity-50">
+              <p className="text-slate-500">
                 SMKN 1 Katapang <br /> Software Engineering
               </p>
             </div>
@@ -243,7 +243,7 @@ function Timeline() {
               <p className="font-semibold mb-4 text-xl">
                 Fullstack Developer <br /> Intern
               </p>
-              <p className="opacity-50">CyberLabs Forensics</p>
+              <p className="text-slate-500">CyberLabs Forensics</p>
 
               <p className=" mt-4 text-gray-500"></p>
             </div>

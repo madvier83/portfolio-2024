@@ -9,7 +9,7 @@ export default function SejatiLifeCard() {
       </div>
       <div className="h-full py-8 px-4">
         <h1 className="text-2xl font-bold mb-4">Sejati Life</h1>
-        <p className="opacity-50">
+        <p className="text-slate-500">
           Church Learning Management System. The application includes features
           such as content customization, course completion, and daily quotes
           from pastor.
