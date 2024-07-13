@@ -10,8 +10,8 @@ const VicallsCard = () => {
       <div className="h-full pt-8 px-4">
         <h1 className="text-2xl font-bold mb-4">Vicalls - Meeting App</h1>
         <p className="text-slate-500">
-          A meeting app featuring video calls, and screen sharing, demonstrating
-          full-stack development skills.
+          Vicalls is a progressive web app (PWA) meeting app that features video
+          calls, record meeting, and screen sharing.
         </p>
 
         <div className="flex flex-wrap gap-2 mt-8">

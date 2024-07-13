@@ -103,7 +103,9 @@ export default function Hero() {
         <img src="https://svgl-badge.vercel.app/api/Software/Git?theme=dark" />
         {/* <img src="https://svgl-badge.vercel.app/api/Software/Postman?theme=dark" /> */}
         <img src="https://svgl-badge.vercel.app/api/Design/Figma?theme=dark" />
-        <img src="https://svgl-badge.vercel.app/api/Software/Visual%20Studio%20Code?theme=dark" />
+        <img src="https://svgl-badge.vercel.app/api/Hosting/Vercel?theme=dark" />
+        <img src="https://svgl-badge.vercel.app/api/Software/Stack%20Overflow?theme=dark" />
+        {/* <img src="https://svgl-badge.vercel.app/api/Software/Visual%20Studio%20Code?theme=dark" /> */}
       </div>
       <div
         className=" mt-8 flex items-center"

@@ -14,27 +14,27 @@ export default function MainLayout({ children }) {
 
   const backgroundRef = useRef(null);
 
-  const handleMouseMove = (e) => {
-    const { clientX, clientY } = e;
-    const { innerWidth, innerHeight } = window;
+  // const handleMouseMove = (e) => {
+  //   const { clientX, clientY } = e;
+  //   const { innerWidth, innerHeight } = window;
 
-    // Calculate the percentage offset
-    const offsetX = (clientX / innerWidth - 0.5) * 10;
-    const offsetY = (clientY / innerHeight - 0.5) * 10;
+  //   // Calculate the percentage offset
+  //   const offsetX = (clientX / innerWidth - 0.1) * -10;
+  //   const offsetY = (clientY / innerHeight - 0.1) * -10;
 
-    // Apply the transformation to the background element
-    if (backgroundRef.current) {
-      backgroundRef.current.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(1.1)`;
-    }
-  };
+  //   // Apply the transformation to the background element
+  //   if (backgroundRef.current) {
+  //     backgroundRef.current.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(1.1)`;
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
+  // useEffect(() => {
+  //   window.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("mousemove", handleMouseMove);
+  //   };
+  // }, []);
 
   return (
     <ReactLenis root>
