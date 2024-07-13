@@ -33,7 +33,7 @@ export default function MainNavbar() {
         <div className="mr-4 border-2 border-slate-800 w-10 h-10 flex items-center justify-center rounded-full overflow-clip">
           <FontAwesomeIcon
             icon={faUserAstronaut}
-            className="text-4xl mt-2 text-white"
+            className="text-2xl text-white"
           />
         </div>
         {/* <FontAwesomeIcon className="w-4 mr-4" icon={faCircle} /> */}
