@@ -230,13 +230,13 @@ export default function Hero() {
           </a>
         </div>
         <a
-          href="https://drive.google.com/file/d/19UiCksWII06ICktvRgPQQLtlb-xlcBry/view?usp=sharing"
+          href="https://drive.google.com/file/d/1NIvpwFupiRO0PWo4s0ey6hh44ChP4uNc/view?usp=sharing"
           target="_blank"
         >
           <div className="flex justify-center mt-4">
             <button className="hover:bg-opacity-25 transition-all duration-500 p-6 px-8 rounded-xl bg-rose-400 bg-opacity-20 backdrop-blur-sm   hover:border-rose-500 border border-slate-800 text-lg cursor-pointer flex items-center justify-between min-w-80 w-full">
               <p>Download CV</p>
-              <p className="text-sm opacity-50">Updated May 2024</p>
+              <p className="text-sm opacity-50">Updated Jan 2025</p>
             </button>
           </div>
         </a>
