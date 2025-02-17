@@ -46,7 +46,7 @@ export default function Hero() {
           Welcome to My Portfolio!
         </h1>
         <p className="text-4xl md:text-7xl font-bold mt-8">
-          Fullstack Web Developer
+          Fullstack Developer
         </p>
         <p className="text-4xl md:text-7xl mb-8 mt-4 text-slate-500">
           From Bandung, Indonesia
